@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/css/bootstrap.min.css" integrity="sha384-r4NyP46KrjDleawBgD5tp8Y7UzmLA05oM1iAEQ17CSuDqnUK2+k9luXQOfXJCJ4I" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/js/bootstrap.min.js" integrity="sha384-oesi62hOLfzrys4LxRF63OJCXdXDipiYWBnvTl9Y9/TRlw5xlKIEHpNyvvDShgf/" crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="css/login.css">
+    <style>
+        body{
+            background-image: url('images/customer.jpg');
+        }
+    </style>
+</head>
+<body>
+    <section>
+        <div class="container" id="cont">
+            <div class="user signinBx">
+                <div class="imgBx">
+                    <h3>Welcom to Foodie Friends</h3>
+                    <p class="txtBus">
+                        Foodie Friends is the best and most powerful platform available to help you get information about business and make you the best choice next time you decide to go on an adventure
+                    </p>
+                </div>
+                <div class="formBx">
+                    <form action="/loginC" method="post">
+                        <h2>Sign In</h2>
+                        <input type="email" placeholder="Email" name="customerEmail">
+                        <input type="password" placeholder="Password" name="CustomerPassword">
+                        <input type="submit"value="Login" class="btn">
+                        <p class="signup">{{message}}</p>
+                        <p class="signup">Don't have an account? <a href="#" onclick="toggleForm()">Sign up</a></p>
+                        <p class="signup"> <a href="/businessReg"> Switch to Business</a></p>
+                    </form>
+                </div>
+            </div>
+
+            <div class="user signupBx">
+                <div class="imgBx"></div>
+                <div class="formBx">
+                    <form id="customer">
+                        <h2>Sign Up</h2>
+                        <input type="text" placeholder="First Name" id="Fname" required>
+                        <input type="text" placeholder="Last Name" id="Lname" required>
+                        <input type="email" placeholder="Email" id="uEmail" required>
+                        <input type="password" placeholder="Password" id="uPass" required>
+                        <input type="password" placeholder="Confirm Password" id="cuPass" required>
+                        <input type="submit"value="Sign up" class="btn"/>
+                        <p class="signup">Already have an account? <a href="#" onclick="toggleForm()">Sign in</a></p>
+                        <p class="signup"> <a href="/businessReg"> Switch to Business</a></p>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="pop-up hide">
+            <div class="message"></div>
+            <button class="btn" id="close">Close</button>
+        </div>
+    </section>
+</body>
+<script type="text/javascript" src="js/signup.js"></script>
+</html>

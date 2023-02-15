@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form>
+        <input type="email" name="mail" id="mail" required>
+        <input type="submit" value="sumit">
+    </form>
+</body>
+<script>
+    document.querySelector('form').addEventListener('submit', (e) =>{
+        e.preventDefault();
+        mail = document.getElementById('mail').value;
+        isEmail(mail)
+    })
+    function isEmail(emailAdress){
+    let regex = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
+
+    if (emailAdress.match(regex)) 
+        // return true; 
+        alert('Good email')
+    else 
+        alert('Wrong Email')
+}
+</script>
+</html>

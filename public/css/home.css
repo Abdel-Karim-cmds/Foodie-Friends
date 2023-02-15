@@ -1,0 +1,75 @@
+.bd-placeholder-img {
+    font-size: 1.125rem;
+    text-anchor: middle;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+@media (min-width: 768px) {
+    .bd-placeholder-img-lg {
+        font-size: 3.5rem;
+    }
+}
+
+/* GLOBAL STYLES
+--------------------------------------------- */
+/* Padding below the footer and lighter body text */
+
+
+
+body {    
+    /* padding-top: 3rem;
+    padding-bottom: 3rem;
+    color: #5a5a5a; */
+    background: url('/images/bg.jpg') no-repeat center center;
+    background-size: cover;
+    /* background: rgba(0,0,0,0.8); */
+}
+
+main{
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+}
+
+/* MARKETING CONTENT
+-------------------------------------------------- */
+
+/* Center align the text within the three columns below the carousel */
+.marketing .col-lg-4 {
+    margin-bottom: 1.5rem;
+    text-align: center;
+}
+
+.marketing h2 {
+    font-weight: 400;
+    /* color: whitesmoke; */
+}
+
+.marketing .col-lg-4 p {
+    margin-right: .75rem;
+    margin-left: .75rem;
+}
+
+/* .marketing .col-lg-4 li {
+    color: black;
+    background: #c0c0c0;
+
+}
+
+nav,.navbar-brand,.nav-link
+{
+    background: black !important;
+    color: whitesmoke !important;
+}
+.container .float-right a
+{
+    color: whitesmoke !important;
+}
+
+footer *
+{
+    color: whitesmoke !important;
+
+} */
